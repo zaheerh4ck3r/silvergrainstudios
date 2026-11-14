@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Silvergrain Studios — Make it matter.</title>
+<meta name="description" content="Silvergrain Studios is an independent creative advertising, film and production company in Islamabad–Rawalpindi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#111318;--silver:#C4C8CE;--ivory:#F2F0EB;--slate:#747D89;--graphite:#30343B;--d:'Space Grotesk','Helvetica Neue',Arial,sans-serif;--b:'Inter',system-ui,sans-serif;--e:'Cormorant Garamond',Georgia,serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--black);color:var(--ivory);font:400 17px/1.6 var(--b);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--black);z-index:60}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--silver);outline-offset:3px}
+h1,h2,h3{font-family:var(--d);font-weight:700;line-height:.98;letter-spacing:-.02em;margin:0;text-transform:uppercase}
+h1{font-size:clamp(3rem,10.5vw,9.5rem)}h2{font-size:clamp(2.1rem,6vw,5rem)}h3{font-size:clamp(1.4rem,2.4vw,2rem)}
+p{margin:0 0 1em;max-width:58ch}
+.wrap{padding:0 clamp(20px,5vw,72px)}
+.sec{padding:clamp(80px,12vw,160px) 0}
+.ivory{background:var(--ivory);color:var(--black)}.ivory .mut{color:#4b525c}
+.lab{font:500 .78rem/1 var(--d);letter-spacing:.14em;color:var(--slate);text-transform:uppercase;margin-bottom:28px;display:block}
+.em{font-family:var(--e);font-style:italic;font-weight:500;text-transform:none;letter-spacing:0}
+.btn{display:inline-flex;gap:.7em;align-items:center;font:500 .85rem var(--d);letter-spacing:.12em;text-transform:uppercase;padding:16px 26px;border:1px solid var(--silver);transition:background .3s,color .3s;cursor:pointer;background:none;color:inherit}
+.btn span{transition:transform .3s}.btn:hover span{transform:translateX(5px)}
+.btn.fill{background:var(--silver);color:var(--black)}.btn.fill:hover{background:var(--ivory)}.btn:not(.fill):hover{background:var(--ivory);color:var(--black)}
+.ivory .btn{border-color:var(--black)}.ivory .btn:not(.fill):hover{background:var(--black);color:var(--ivory)}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,5vw,72px);transition:background .4s,backdrop-filter .4s}
+nav.s{background:rgba(17,19,24,.82);backdrop-filter:blur(12px)}
+.mark{font:700 1rem var(--d);letter-spacing:.18em}
+.links{display:flex;gap:34px;align-items:center}
+.links a{font:500 .8rem var(--d);letter-spacing:.14em;position:relative;padding:4px 0}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--silver);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.links a:not(.btn):hover::after,.links a.on::after{transform:scaleX(1)}
+.links .btn{padding:11px 18px;font-size:.75rem}
+#mb{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer;position:relative}
+#mb i{position:absolute;left:10px;right:10px;height:2px;background:currentColor;transition:transform .35s,top .35s}#mb i:nth-child(1){top:16px}#mb i:nth-child(2){top:26px}
+body.open #mb i:nth-child(1){top:21px;transform:rotate(45deg)}body.open #mb i:nth-child(2){top:21px;transform:rotate(-45deg)}
+@media(max-width:860px){#mb{display:block}.links{position:fixed;inset:0;background:var(--black);flex-direction:column;align-items:flex-start;justify-content:center;gap:22px;padding:0 24px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}.links a{font-size:2rem;letter-spacing:-.01em}.links .btn{font-size:.9rem;padding:16px 24px}body.open .links{opacity:1;visibility:visible}body.open{overflow:hidden}#mb{z-index:2}.mark{z-index:2}}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:140px 0 36px;position:relative;overflow:hidden;background:radial-gradient(60% 70% at 78% 30%,#3b424d 0,transparent 60%),radial-gradient(40% 50% at 15% 85%,#252a32 0,transparent 70%),var(--black)}
+.hero::before{content:"";position:absolute;top:-10%;bottom:-10%;width:22%;left:58%;background:linear-gradient(90deg,transparent,rgba(196,200,206,.13),transparent);transform:skewX(-14deg);animation:sweep 14s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,19,24,.35),rgba(17,19,24,.75))}
+.hero>*{position:relative;z-index:2}
+@keyframes sweep{to{transform:translateX(-38vw) skewX(-14deg)}}
+.hero h1 .l{display:block;overflow:hidden}.hero h1 .l b{display:block;font:inherit;transform:translateY(105%);animation:up 1.1s cubic-bezier(.2,.7,.1,1) forwards}
+.hero h1 .l:nth-child(2) b{animation-delay:.15s}.hero h1 .l:nth-child(3) b{animation-delay:.3s}
+.hero .fade{opacity:0;animation:fi 1s .9s forwards}.hero .fade.b{animation-delay:1.2s}
+@keyframes up{to{transform:none}}@keyframes fi{to{opacity:1}}
+.hero .row{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 64px}
+.foot{display:flex;justify-content:space-between;gap:12px;font:500 .72rem var(--d);letter-spacing:.16em;color:var(--silver);border-top:1px solid rgba(196,200,206,.25);padding-top:18px}
+.ph{font:500 .68rem var(--d);letter-spacing:.12em;color:var(--slate);text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,100px);align-items:end}
+.frame{aspect-ratio:4/5;background:linear-gradient(160deg,#3a414c,#15181d 70%);position:relative;overflow:hidden}
+.frame::after{content:"";position:absolute;left:30%;top:-10%;bottom:-10%;width:30%;background:linear-gradient(90deg,transparent,rgba(242,240,235,.14),transparent);transform:skewX(-12deg)}
+.frame .ph{position:absolute;left:14px;bottom:12px;z-index:2}
+.wk{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:60px}
+.t{display:block;position:relative}.t .frame{transition:transform .8s cubic-bezier(.2,.7,.1,1)}.t .box{overflow:hidden}.t:hover .frame{transform:scale(1.03)}
+.t:nth-child(1){grid-column:1/8}.t:nth-child(1) .frame{aspect-ratio:16/10}.t:nth-child(2){grid-column:9/13;margin-top:100px}.t:nth-child(3){grid-column:3/10}.t:nth-child(3) .frame{aspect-ratio:16/10}
+.t:nth-child(2) .frame{background:linear-gradient(200deg,#5a626e,#1b1e24 65%)}.t:nth-child(3) .frame{background:linear-gradient(120deg,#23272e,#6d7580 140%)}
+.t h3{margin:16px 0 4px;transition:transform .4s}.t:hover h3{transform:translateX(8px)}
+.t small{font:500 .75rem var(--d);letter-spacing:.12em;color:var(--slate);text-transform:uppercase}
+.t p{margin:8px 0 0;font-size:.95rem;color:var(--silver)}
+.svc{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--black);margin-top:60px}
+.svc>div{padding:34px 28px 40px 0}.svc>div+div{padding-left:28px;border-left:1px solid var(--black)}
+.svc ul{padding:0;margin:18px 0 0;list-style:none;font-size:.95rem}.svc li{padding:7px 0;border-top:1px solid rgba(17,19,24,.18)}
+.phil{padding:clamp(80px,12vw,150px) 0}.phil .w{font:700 clamp(2.4rem,9vw,8rem)/1 var(--d);text-transform:uppercase;letter-spacing:-.03em;color:var(--graphite);transition:color .8s}.phil .w.in{color:var(--ivory)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:60px;border-top:1px solid var(--graphite)}
+.st{padding:28px 20px 0 0;color:var(--slate);transition:color .6s}.st.in{color:var(--ivory)}.st b{font:700 .8rem var(--d);letter-spacing:.14em;display:block;margin-bottom:14px;color:var(--silver)}.st h3{font-size:1.25rem;margin-bottom:10px}.st p{font-size:.92rem}
+.close{min-height:80svh;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(50% 60% at 50% 100%,#3b424d,transparent 70%),var(--graphite)}
+.close .em{font-size:clamp(1.5rem,3vw,2.4rem);margin:28px 0 36px;display:block}
+footer{padding:80px 0 40px;border-top:1px solid var(--graphite)}
+footer .big{font:700 clamp(2rem,8vw,7rem)/1 var(--d);letter-spacing:-.03em;color:var(--silver);margin-bottom:50px}
+.fc{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;font-size:.92rem;color:var(--silver)}.fc a{display:block;padding:3px 0}.fc a:hover{color:var(--ivory)}.fc b{display:block;font:500 .72rem var(--d);letter-spacing:.14em;color:var(--slate);margin-bottom:10px}
+.copy{margin-top:60px;font:500 .7rem var(--d);letter-spacing:.12em;color:var(--slate)}
+.pg{padding:170px 0 0}.pg h1{font-size:clamp(2.6rem,8vw,7rem)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px)}
+.flt{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 0}.flt button{background:none;border:1px solid var(--graphite);color:var(--silver);padding:10px 18px;font:500 .78rem var(--d);letter-spacing:.1em;cursor:pointer;text-transform:uppercase}.flt button[aria-pressed=true]{background:var(--silver);color:var(--black)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px;margin-top:50px}form .f{grid-column:span 1}form .full{grid-column:1/-1}
+label{display:block;font:500 .75rem var(--d);letter-spacing:.12em;color:var(--silver);margin-bottom:8px;text-transform:uppercase}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--slate);color:var(--ivory);font:400 1rem var(--b);padding:10px 0;border-radius:0}select option{background:var(--black)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ivory);box-shadow:0 1px 0 var(--ivory)}
+.err{color:#e7a39a;font-size:.82rem;min-height:1.2em;margin-top:5px}.hp{position:absolute;left:-9999px}
+#ok{display:none;border-top:1px solid var(--silver);padding-top:30px;margin-top:50px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.1,1)}.rv.in{opacity:1;transform:none}
+#up{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:44px;height:44px;border:1px solid var(--silver);background:var(--black);color:var(--silver);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}#up.s{opacity:1;pointer-events:auto}
+@media(max-width:860px){.grid2,.two,.svc,.fc,form{grid-template-columns:1fr}.svc>div+div{padding-left:0;border-left:0;border-top:1px solid var(--black)}.wk{display:block}.t{margin:0 0 50px!important}.steps{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--graphite);margin-left:4px}.st{padding:0 0 30px 22px}.foot span:last-child{display:none}.hero .row{margin-bottom:44px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero h1 .l b{transform:none}.hero .fade,.rv{opacity:1;transform:none}.phil .w,.st{color:var(--ivory)}}
+</style></head>
+<body>
+<nav id="nav"><a class="mark" href="#home" aria-label="Silvergrain Studios, home">SILVERGRAIN STUDIOS</a>
+<button id="mb" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+<div class="links" id="lk"><a href="#home" data-p="home">Home</a><a href="#about" data-p="about">About</a><a href="#services" data-p="services">Services</a><a href="#work" data-p="work">Work</a><a href="#process" data-p="process">Process</a><a href="#contact" data-p="contact">Contact</a><a class="btn fill" href="#contact">Start a project <span>→</span></a></div></nav>
+<main id="app"></main>
+<footer><div class="wrap"><div class="big">Make it matter.</div>
+<div class="fc"><div><b>Silvergrain Studios</b>Independent creative advertising, film &amp; production company.</div>
+<div><b>Pages</b><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
+<div><b>Follow</b><span id="soc"></span></div>
+<div><b>Contact</b><a id="em" href="#"></a><span id="ph"></span><br>Islamabad, Pakistan</div></div>
+<div class="copy">© <span id="yr"></span> SILVERGRAIN STUDIOS. ALL RIGHTS RESERVED. &nbsp;PRIVACY · TERMS (TO BE ADDED)</div></div></footer>
+<button id="up" aria-label="Back to top">↑</button>
+<script>
+/* ===== EDIT ME: contact details, social URLs and work data ===== */
+const CONFIG={email:"hello@your-domain.com",phone:"+92 000 0000000",social:{Instagram:"#",LinkedIn:"#",YouTube:"#",Vimeo:"#"}};
+const WORK=[
+{t:"Concept A",c:"Advertising",k:"Self-initiated concept",d:"Placeholder. Replace with a real concept or commissioned project."},
+{t:"Concept B",c:"Brand Films",k:"Self-initiated concept",d:"Placeholder. Replace with a real brand film or original production."},
+{t:"Concept C",c:"Original Projects",k:"Original production",d:"Placeholder. Replace with a real project. Never label speculative work as client work."}];
+/* ================================================================= */
+const $=s=>document.querySelector(s),A=$('#app');
+const arrow=' <span>→</span>';
+const cta=(h,t,f)=>`<a class="btn ${f?'fill':''}" href="#${h}">${t}${arrow}</a>`;
+const tile=w=>`<a class="t rv" href="#contact" data-c="${w.c}"><div class="box"><div class="frame"><span class="ph">Placeholder frame</span></div></div><h3>${w.t}</h3><small>${w.c} · ${w.k}</small><p>${w.d}</p></a>`;
+const steps=[["Discover","Understand the brand, audience, challenge and opportunity."],["Strategise","Find the central insight and establish the creative direction."],["Create","Develop the concept, visual language and campaign."],["Produce","Bring the idea to life through production and execution."],["Deliver","Finalise, launch and evaluate the work."]];
+const stepsH=steps.map((s,i)=>`<div class="st"><b>0${i+1}</b><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('');
+const closing=`<section class="close"><div class="wrap"><h2>Have something<br>worth saying?</h2><span class="em">Let’s make something worth remembering.</span>${cta('contact','Start a project',1)}</div></section>`;
+const sv=[["Creative Advertising","We develop original creative concepts and campaigns that give brands something meaningful to say.",["Campaign strategy","Creative concepts","Brand positioning","Campaign development","Creative direction","Advertising films","Campaign storytelling"]],["Film & Production","We turn ideas into compelling visual stories through thoughtful direction and cinematic production.",["Commercial production","Brand films","Product films","Corporate films","Documentary-style storytelling","Photography","Post-production"]],["Creative Partnerships","We work with ambitious brands as ongoing creative partners.",["Creative retainers","Campaign planning","Visual content development","Creative consultation","Art direction","Ongoing production"]]];
+const svH=sv.map((s,i)=>`<div class="rv"><span class="lab" style="color:#4b525c">0${i+1}</span><h3>${s[0]}</h3><p class="mut" style="margin-top:14px">${s[1]}</p><ul>${s[2].map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('');
+const pages={
+home:()=>`<section class="hero"><div class="wrap"><h1><span class="l"><b>We make</b></span><span class="l"><b>ideas</b></span><span class="l"><b>matter.</b></span></h1>
+<p class="fade" style="margin-top:28px;font-size:1.15rem;color:var(--silver)">We build ideas, campaigns and visual stories that help ambitious brands stand apart.</p>
+<div class="row fade b">${cta('work','Explore our work',1)}${cta('contact','Start a project')}</div>
+<div class="foot"><span>INDEPENDENT CREATIVE COMPANY</span><span>HERO FOOTAGE: PLACEHOLDER</span><span>ISLAMABAD · PAKISTAN</span></div></div></section>
+<section class="sec ivory"><div class="wrap grid2"><div class="rv"><span class="lab">01 / Who we are</span><h2>Good work should make you feel something.</h2></div><div class="rv"><div class="frame" style="aspect-ratio:3/2"><span class="ph">Placeholder frame</span></div><p style="margin-top:28px">Silvergrain Studios is an independent creative company working across advertising, filmmaking and visual storytelling.</p><p class="mut">We bring together strategy, ideas and cinematic execution to create work that captures attention and stays with people.</p>${cta('about','More about us')}</div></div></section>
+<section class="sec"><div class="wrap"><span class="lab">02 / Selected work</span><h2 class="rv">A few things we’ve made.</h2><div class="wk">${WORK.map(tile).join('')}</div></div></section>
+<section class="sec ivory"><div class="wrap"><span class="lab">03 / Our capabilities</span><h2 class="rv">From the first idea to the final frame.</h2><div class="svc">${svH}</div><div style="margin-top:50px">${cta('services','Explore our services')}</div></div></section>
+<section class="phil"><div class="wrap">${['Strategy.','Idea.','Story.','Execution.','Impact.'].map(w=>`<div class="w">${w}</div>`).join('')}<p style="margin-top:40px;color:var(--silver)">Ideas are nothing without execution. The best work happens when intelligent thinking meets exceptional execution.</p></div></section>
+<section class="sec" style="padding-top:0"><div class="wrap"><span class="lab">04 / How we work</span><h2 class="rv">Thoughtful by design.<br>Precise by execution.</h2><div class="steps">${stepsH}</div><div style="margin-top:50px">${cta('process','Discover our process')}</div></div></section>${closing}`,
+about:()=>`<section class="pg"><div class="wrap"><span class="lab">About</span><h1>We believe in the power of a good idea.</h1></div></section>
+<section class="sec"><div class="wrap two"><div class="rv"><p style="font-size:1.25rem">Silvergrain Studios is an independent creative advertising, filmmaking and production company in Islamabad–Rawalpindi.</p><p style="color:var(--silver)">The name comes from the silver-halide grains in photographic film: the craft of filmmaking, the beauty of imperfect images, the emotion of a story. Our philosophy is the same as our tagline. Every idea should have a reason to exist. Every campaign should be worth remembering.</p></div><div class="frame rv" style="aspect-ratio:4/3"><span class="ph">Placeholder frame</span></div></div></section>
+<section class="sec ivory"><div class="wrap two"><div class="rv"><h3 class="em" style="font-size:2.2rem;margin-bottom:10px">Our philosophy</h3><p>We believe advertising should be more than noise. It should communicate something, make people feel something and leave a lasting impression.</p></div><div class="rv"><h3 class="em" style="font-size:2.2rem;margin-bottom:10px">Our approach</h3><p>We combine strategic thinking, original creative concepts, visual storytelling and careful execution.</p><h3 class="em" style="font-size:2.2rem;margin:30px 0 10px">Our ambition</h3><p>To build a creative company recognised for the quality of its ideas, the craft of its work and the relationships it builds.</p></div></div></section>${closing}`,
+services:()=>`<section class="pg"><div class="wrap"><span class="lab">Services</span><h1>Three ways we work with you.</h1></div></section>${sv.map((s,i)=>`<section class="sec ${i%2?'':'ivory'}"><div class="wrap two"><div class="rv"><span class="lab" style="${i%2?'':'color:#4b525c'}">0${i+1}</span><h2 style="font-size:clamp(2rem,5vw,4rem)">${s[0]}</h2><p style="margin-top:24px">${s[1]}</p><p class="${i%2?'':'mut'}">No fixed prices and no promised results. We scope every project from a conversation about what you need.</p></div><div class="rv"><ul style="list-style:none;padding:0;margin:0">${s[2].map(x=>`<li style="padding:12px 0;border-top:1px solid ${i%2?'var(--graphite)':'rgba(17,19,24,.2)'}">${x}</li>`).join('')}</ul></div></div></section>`).join('')}${closing}`,
+work:()=>`<section class="pg"><div class="wrap"><span class="lab">Work</span><h1>Selected work.</h1><p style="margin-top:28px;color:var(--silver)">Everything below is a clearly labelled placeholder. Replace it with real projects, and keep client work, self-initiated concepts and original productions distinct.</p><div class="flt" role="group" aria-label="Filter work">${['All','Advertising','Brand Films','Commercials','Photography','Original Projects'].map((f,i)=>`<button aria-pressed="${!i}" data-f="${f}">${f}</button>`).join('')}</div><div class="wk" id="wkg">${WORK.map(tile).join('')}</div></div></section><div style="height:80px"></div>${closing}`,
+process:()=>`<section class="pg"><div class="wrap"><span class="lab">Our process</span><h1>Organised. Collaborative. Precise.</h1><div class="steps" style="margin-top:80px">${stepsH}</div><div class="two" style="margin-top:90px"><div class="rv"><h3>Before we start</h3><p style="margin-top:14px;color:var(--silver)">An initial consultation, a written brief and research into your brand, audience and market.</p></div><div class="rv"><h3>While we make</h3><p style="margin-top:14px;color:var(--silver)">Creative direction, concept development and client approvals at each stage, then production, editing, post-production and final delivery.</p></div></div></div></section><div style="height:100px"></div>${closing}`,
+contact:()=>`<section class="pg"><div class="wrap"><span class="lab">Contact</span><h1>Let’s make something matter.</h1><p style="margin-top:28px;color:var(--silver)">Have a project, an idea or a challenge worth exploring? Tell us about it. Or write directly to <a href="mailto:${CONFIG.email}" style="text-decoration:underline">${CONFIG.email}</a>.</p>
+<form id="f" novalidate><div class="f"><label for="n">Full name</label><input id="n" name="name" autocomplete="name" required><div class="err"></div></div><div class="f"><label for="co">Company name</label><input id="co" name="company"><div class="err"></div></div>
+<div class="f"><label for="e">Email address</label><input id="e" name="email" type="email" autocomplete="email" required><div class="err"></div></div><div class="f"><label for="p">Phone (optional)</label><input id="p" name="phone" type="tel"><div class="err"></div></div>
+<div class="f"><label for="t">Project type</label><select id="t" name="type" required><option value="">Select</option>${['Creative advertising campaign','Commercial film','Brand film','Photography','Creative partnership','Other'].map(o=>`<option>${o}</option>`).join('')}</select><div class="err"></div></div>
+<div class="f"><label for="b">Approximate budget</label><select id="b" name="budget"><option value="">Select</option>${['Under PKR 100,000','PKR 100,000–250,000','PKR 250,000–500,000','PKR 500,000–1,000,000','PKR 1,000,000+','International budget','Not sure yet'].map(o=>`<option>${o}</option>`).join('')}</select><div class="err"></div></div>
+<div class="f"><label for="tl">Expected timeline</label><input id="tl" name="timeline"><div class="err"></div></div><div class="f"><label for="h">How did you hear about us?</label><input id="h" name="heard"><div class="err"></div></div>
+<div class="full"><label for="d">Project description</label><textarea id="d" name="desc" rows="5" required></textarea><div class="err"></div></div><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="full"><button class="btn fill" type="submit" id="sb">Send enquiry${arrow}</button></div></form>
+<div id="ok" role="status"><h3>Thank you.</h3><p style="margin-top:12px;color:var(--silver)">Your email app should open with your enquiry ready to send. If it doesn’t, write to <a href="mailto:${CONFIG.email}" style="text-decoration:underline">${CONFIG.email}</a>.</p></div></div></section><div style="height:120px"></div>`,
+404:()=>`<section class="pg" style="min-height:90svh"><div class="wrap"><span class="lab">404</span><h1>This frame is missing.</h1><p style="margin:28px 0;color:var(--silver)">The page you wanted isn’t here.</p>${cta('home','Back home',1)}</div></section>`
+};
+function bind(p){
+ if(p==='work')document.querySelectorAll('.flt button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.flt button').forEach(x=>x.setAttribute('aria-pressed',x===b));document.querySelectorAll('#wkg .t').forEach(t=>t.style.display=(b.dataset.f==='All'||t.dataset.c===b.dataset.f)?'':'none')});
+ if(p==='contact'){const f=$('#f');f.onsubmit=e=>{e.preventDefault();let bad=0;f.querySelectorAll('.err').forEach(x=>x.textContent='');
+  const chk=(id,m,re)=>{const i=$('#'+id),v=i.value.trim();if(!v||(re&&!re.test(v))){i.nextElementSibling.textContent=m;i.setAttribute('aria-invalid','true');bad++}else i.removeAttribute('aria-invalid')};
+  chk('n','Enter your name.');chk('e','Enter a valid email address.',/^\S+@\S+\.\S+$/);chk('t','Choose a project type.');chk('d','Describe your project in a few lines.');
+  if(bad||f.website.value)return;const sb=$('#sb');sb.textContent='Sending…';sb.disabled=true;
+  setTimeout(()=>{const g=n=>f[n].value||'-';const body=`Name: ${g('name')}\nCompany: ${g('company')}\nEmail: ${g('email')}\nPhone: ${g('phone')}\nType: ${g('type')}\nBudget: ${g('budget')}\nTimeline: ${g('timeline')}\nHeard via: ${g('heard')}\n\n${g('desc')}`;
+  location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent('Project enquiry from '+f.name.value)}&body=${encodeURIComponent(body)}`;f.style.display='none';$('#ok').style.display='block'},500)}}
+}
+function obs(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.25});document.querySelectorAll('.rv,.phil .w,.st').forEach(x=>io.observe(x))}
+function route(){const p=(location.hash.slice(1)||'home');const k=pages[p]?p:'404';A.innerHTML=pages[k]();document.body.classList.remove('open');$('#mb').setAttribute('aria-expanded','false');
+ document.querySelectorAll('.links a[data-p]').forEach(a=>{a.classList.toggle('on',a.dataset.p===k);a.setAttribute('aria-current',a.dataset.p===k?'page':'false')});
+ document.title=(k==='home'?'Silvergrain Studios — Make it matter.':k[0].toUpperCase()+k.slice(1)+' — Silvergrain Studios');window.scrollTo(0,0);bind(k);obs()}
+addEventListener('hashchange',route);route();
+$('#mb').onclick=()=>{const o=document.body.classList.toggle('open');$('#mb').setAttribute('aria-expanded',o)};
+addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remove('open')});
+addEventListener('scroll',()=>{$('#nav').classList.toggle('s',scrollY>40);$('#up').classList.toggle('s',scrollY>700)},{passive:true});
+$('#up').onclick=()=>scrollTo({top:0});
+$('#yr').textContent=new Date().getFullYear();
+$('#soc').innerHTML=Object.entries(CONFIG.social).map(([k,v])=>`<a href="${v}" rel="noopener">${k}</a>`).join('');
+$('#em').textContent=CONFIG.email;$('#em').href='mailto:'+CONFIG.email;$('#ph').textContent=CONFIG.phone;
+</script></body></html>
